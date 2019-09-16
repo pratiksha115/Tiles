@@ -1,0 +1,9 @@
+.heading{
+    font-size:80px;
+    color:black;
+    height: 90%;
+    width: 100%;
+    background-size: 90%;
+    background-image:url('src\assets\img\img10.jpeg');
+   
+}

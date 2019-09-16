@@ -1,0 +1,50 @@
+<mat-sidenav-container fullscrren>
+    <mat-sidenav #sidenav  mode="side">
+           <div style="height:30%;background-image:url(../assets/img/logo.png);
+                       background-repeat: no-repeat;background-size:80%;background-color: white; ">
+            </div>
+    <!-- <div> 
+        <mat-list >
+            <div class="menu-list"><mat-list-item (click)="set(0)">PRODUCTION FORM</mat-list-item></div>
+            <div class="menu-list"><mat-list-item (click)="set(1)">CRUMB</mat-list-item></div>
+            <div class="menu-list"><mat-list-item (click)="set(2)">SOLUTION B</mat-list-item></div>
+            <div class="menu-list"><mat-list-item (click)="set(3)">MOULD R</mat-list-item></div> 
+            <div class="menu-list"><mat-list-item (click)="OpenOnClick()">COLORMASTER<mat-icon>keyboard_arrow_down</mat-icon></mat-list-item>
+                 <mat-list-item *ngIf=show (click)="set(4)" >COLORNAME</mat-list-item> 
+                  <mat-list-item  *ngIf=show (click)="set(5)" >COLORCODE</mat-list-item>
+            </div>       
+            <div class="menu-list"></div><mat-list-item (click)="set(6)">PAYROLL</mat-list-item></div> 
+        </mat-list>
+    </div> -->
+    <div>
+        <mat-list>
+               
+            <div class="menu-list" > <mat-list-item style="color:black;" (click)="set(0)">PRODUCTION FROM</mat-list-item></div>
+           <div class="menu-list"> <mat-list-item   style="color:black;" (click)="set(1)" >CRUMB</mat-list-item></div>
+            <div class="menu-list"><mat-list-item  style="color:black;" (click)="set(2)">SOLUTION B</mat-list-item></div>
+           <div class="menu-list"> <mat-list-item  style="color:black;" (click)="set(3)">MOULD R</mat-list-item></div>
+           <div class="menu-list"> <mat-list-item  style="color:black;" (click)="OpenOnClick()">COLOUR MASTER <mat-icon>keyboard_arrow_down</mat-icon></mat-list-item>
+                 <mat-list-item *ngIf=show  (click)="set(4)" style="color: black;">ColorName</mat-list-item> 
+                 <mat-list-item *ngIf=show  (click)="set(5)" style="color: black;">ColorCode</mat-list-item> 
+           </div>
+            <div class="menu-list"><mat-list-item style="color:black;" (click)="set(6)">PAYROLL </mat-list-item></div>
+            
+        </mat-list>  
+    </div>
+</mat-sidenav>
+    <mat-sidenav-content>
+        <mat-toolbar style="background-color: rgb(255, 255, 128)
+        ">
+            <button mat-icon-button (click)="sidenav.toggle()"><mat-icon>menu</mat-icon></button> 
+            <h1 style="margin-left:35%;font-size: 30px;">ADIFLEX TYLES FACTORY</h1>
+            <button class="btn al-auto" mat-raised-button color="primary" (click)="logoutButton()">LogOut</button>
+        </mat-toolbar>
+        <div class="main-content" >
+            
+        </div> 
+    
+           <router-outlet></router-outlet> 
+      
+    </mat-sidenav-content>
+</mat-sidenav-container>
+

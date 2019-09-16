@@ -1,0 +1,7 @@
+.main{
+    height: 590px;
+    width: 100%;
+    background-size: 100%;
+    background-image:url('src\assets\img\img10.jpeg');
+    background-repeat: no-repeat;
+  }
